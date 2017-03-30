@@ -1,10 +1,10 @@
 {
-  "name": "dec-router",
+  "name": "koa-dec-router",
   "version": "0.0.1",
-  "description": "A decorator based koa router.",
+  "description": "An ES6 decorator + class based router, support inherit, override, priority, auto load controllers, etc.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production babel -d ./lib -s false -D ./src",
+    "build": "cross-env NODE_ENV=production babel -d ./lib -s false -D ./src && git add -A",
     "test": "cross-env NODE_ENV=development DEBUG=dec-router ava --serial",
     "cover": "cross-env NODE_ENV=development nyc ava --serial"
   },
@@ -47,13 +47,14 @@
     "babel-plugin-transform-class-properties": "^6.23.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "nyc": "^10.2.0",
-    "pre-commit": "^1.2.2",
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-preset-stage-0": "^6.22.0",
     "cross-env": "^3.2.4",
     "eslint": "^3.18.0",
-    "koa": "^2"
+    "koa": "^2",
+    "nyc": "^10.2.0",
+    "pre-commit": "^1.2.2",
+    "supertest": "^3.0.0"
   },
   "ava": {
     "files": [

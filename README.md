@@ -5,6 +5,8 @@
 * [Examples](test/app)
 
 
+[![Build Status](https://travis-ci.org/zaaack/koa-dec-router.svg?branch=master)](https://travis-ci.org/zaaack/koa-dec-router) [![npm](https://img.shields.io/npm/v/koa-dec-router.svg)](https://www.npmjs.com/package/koa-dec-router) [![npm](https://img.shields.io/npm/dm/koa-dec-router.svg)](https://www.npmjs.com/package/koa-dec-router)
+
 ## Install
 
 ```sh
