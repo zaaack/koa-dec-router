@@ -123,15 +123,15 @@ export function route (
       func.middlewares = args // for override access
       await func.call(this, ctx, next)
     }
-    routes.push({
+    const route = {
       method,
       path,
       opts,
       priority: opts.priority,
       funcName: name,
       middlewares: args.concat([handler]),
-    })
-    target[ROUTES] = routes
+    }
+    target[ROUTES] = routes.concat(route)
   }
 }
 
