@@ -10,7 +10,7 @@
 ## Install
 
 ```sh
-npm i -g koa-dec-router
+npm i koa-dec-router
 
 ```
 
