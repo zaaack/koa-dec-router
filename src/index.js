@@ -73,7 +73,7 @@ const defaultOptions = {
           .forEach(registerCtrl)
       },
     })
-    uniqBy(routes, r => r.path) // override and unique
+    uniqBy(routes, r => r.method + r.path) // override and unique
       .sort((a, b) => b.priority - a.priority).forEach(route => {
         debug(route.method, route.path, route.funcName, route.priority)
         options.registerRoute(options.router, route, options)
